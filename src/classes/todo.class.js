@@ -8,4 +8,15 @@ export class Todo {
         this.completado = false;
         this.creado = new Date();  
     }
+
+    static fromJson({id, tarea, completado, creado}){
+
+        const tempTodo = new Todo(tarea);
+
+        this.id - id;
+        this.completado = completado;
+        this.creado = creado;
+
+        return tempTodo;
+    }
 }
